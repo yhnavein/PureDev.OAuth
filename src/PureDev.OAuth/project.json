@@ -1,6 +1,21 @@
 ﻿{
   "version": "0.1.0-*",
 
+  "packOptions": {
+    "authors": [ "PureDev Piotr Dabrowski" ],
+    "copyright": "PureDev 2017",
+    "description": "Easy integration of your .NET Core with Facebook or Google OAuth services",
+    "licenseUrl": "https://opensource.org/licenses/MIT",
+    "name": "PureDev.OAuth",
+    "owners": [ "PureDev Piotr Dabrowski" ],
+    "projectUrl": "https://github.com/yhnavein/PureDev.OAuth",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/yhnavein/PureDev.OAuth.git"
+    },
+    "tags": [ "Facebook", "Google", "OAuth", "Auth", "Core" ]
+  },
+
   "dependencies": {
     "Microsoft.Extensions.Options": "1.1.0",
     "Newtonsoft.Json": "9.0.1",
