@@ -18,8 +18,9 @@ namespace PureDev.OAuth.Helpers
                 url = url + "?" + qs;
             }
             var jsonString = GetData(url, bearerToken);
-            
-            return JsonConvert.DeserializeObject<T>(jsonString.Result);
+            var result = jsonString.Result;
+
+            return JsonConvert.DeserializeObject<T>(result);
         }
 
         public static T PostData<T>(string url, IEnumerable<KeyValuePair<string, string>> formData)

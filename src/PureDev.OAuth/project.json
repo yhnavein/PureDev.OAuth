@@ -1,6 +1,5 @@
 ﻿{
   "version": "0.1.0-*",
-
   "packOptions": {
     "authors": [ "PureDev Piotr Dabrowski" ],
     "copyright": "PureDev 2017",
@@ -15,22 +14,22 @@
     },
     "tags": [ "Facebook", "Google", "OAuth", "Auth", "Core" ]
   },
-
   "dependencies": {
     "Microsoft.Extensions.Options": "1.1.0",
     "Newtonsoft.Json": "9.0.1",
     "System.Net.WebHeaderCollection": "4.3.0"
   },
-
   "frameworks": {
     "netcoreapp1.1": {
       "imports": "dnxcore50"
     }
   },
-
   "scripts": {
     "postcompile": [
       "dotnet pack --no-build --configuration %compile:Configuration%"
     ]
+  },
+  "buildOptions": {
+    "define": [ "DEBUG" ]
   }
 }
